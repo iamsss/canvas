@@ -7,17 +7,16 @@
     <body>
         <p>Image to use:</p>
         
-        <img id="scream"
-        src="http://www.clker.com/cliparts/3/m/v/Y/E/V/small-red-apple-hi.png" alt="The Scream">
-        
+       <input type="file" id="file" onchange="previewFile()">
         <p>Canvas:</p>
         
-        <canvas id="myCanvas" onmousemove="handleMouseMove(event)" onmousedown="handleMouseDown(event)" onmouseup="handleMouseUp(event)" touchstart="handleMouseUp(event)" touchmove="handleMouseMove(event)" touchend="handleMouseDown(event)" ></canvas>
+        <canvas id="myCanvas" onmousemove="handleMouseMove(event)" onmousedown="handleMouseDown(event)" onmouseup="handleMouseUp(event)" touchstart="handleMouseDown(event)" touchmove="handleMouseMove(event)" touchend="handleMouseUp(event)" ></canvas>
         
    
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
         
 
         <script src="/cic.js"></script>
+        <button onclick="GImage()">Generate Image</button>
     </body>
 </html>
