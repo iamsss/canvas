@@ -12,11 +12,11 @@
         
         <p>Canvas:</p>
         
-        <canvas id="myCanvas" ></canvas>
+        <canvas id="myCanvas" onmousemove="handleMouseMove(event)" onmousedown="handleMouseDown(event)" onmouseup="handleMouseUp(event)" touchstart="handleMouseUp(event)" touchmove="handleMouseMove(event)" touchend="handleMouseDown(event)" ></canvas>
         
    
         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        <p>Value: <span id="demo"></span></p>
+        
 
         <script src="/cic.js"></script>
     </body>
