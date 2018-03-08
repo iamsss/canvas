@@ -10,8 +10,9 @@ var offsetX = canvas.offsetLeft;
 var offsetY = canvas.offsetTop;
 var left = vw + x - 250; // For stop sliding left when it is negative
 var right = vh + y - 250; // For stop sliding down when it is negative
-var zoom = 15; // It is value for zooming image strength in slider
+var zoom = 100; // It is value for zooming image strength in slider
 var isDown = false; // Dragging Flag
+
 
 function setVwVh() {
     vw = img.width;
@@ -129,6 +130,7 @@ function slideImg(val) {
 
 slider.oninput = function () { // triggered when sliding start
 
+   
     var val = this.value - v; // Getting Difference of slided now to previous slided
     initilizeLR(); // initializing left and right
     console.log('Value',val);
@@ -270,7 +272,7 @@ function move(pageX, pageY) {
     }
 }
 
-function GImage() {
+function GImage() {  // to generate the image
     var img = new Image();
 
     img.crossOrigin = "Anonymous";

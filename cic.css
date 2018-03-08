@@ -38,8 +38,3 @@ canvas {
     cursor: pointer;
 }
 
-#scream {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-}
